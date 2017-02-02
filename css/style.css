@@ -5,6 +5,14 @@
 
 * {border: 1px solid #aaa;}
 */
+  html {
+    background-attachment: fixed;
+    background-image: url('../images/bts.jpg');
+    height: 200%;
+    width: 100%;
+    background-origin: 50% 50%;
+    background-size: cover;
+  }
   body {
     display: flex;
     flex-direction: column;
@@ -81,6 +89,12 @@
   main section:nth-child(even) article:nth-child(3) {
     background-color: #7fe3d4;
   }
+  main section:nth-child(even) article:nth-child(4) {
+    background-color: #7fe3d4;
+  }
+  main section:nth-child(even) article:nth-child(5) {
+    background-color: #7fe3d4;
+  }
   main section:nth-child(odd) article:nth-child(1) {
     background-color: #dbaab1;
   }
@@ -89,6 +103,12 @@
   }
   main section:nth-child(odd) article:nth-child(3) {
     background-color: #b1b1b1;
+  }
+  main section:nth-child(odd) article:nth-child(4) {
+    background-color: #7fe3d4;
+  }
+  main section:nth-child(odd) article:nth-child(5) {
+    background-color: #7fe3d4;
   }
   footer {
     height: 70px;
