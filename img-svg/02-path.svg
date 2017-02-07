@@ -4,6 +4,6 @@
 <svg width="300px" height="200px" xml:lang="fr"
 xmlns="http://www.w3.org/2000/svg"
 xmlns:xlink="http://www.w3.org/1999/xlink">
-   <title>Ellipses</title>
-   <ellipse cx="150" cy="100" rx="100" ry="50" stroke="purple" stroke-width="2" fill="lightblue" />
+   <title>Paths</title>
+   <path d="M70 100 C 100 10, 125 10, 155 80 S 210 150, 240 80" stroke="black" fill="transparent"/>
 </svg>
