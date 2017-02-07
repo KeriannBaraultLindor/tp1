@@ -4,6 +4,6 @@
 <svg width="300px" height="200px" xml:lang="fr"
 xmlns="http://www.w3.org/2000/svg"
 xmlns:xlink="http://www.w3.org/1999/xlink">
-   <title>Cercles</title>
-   <circle cx="125" cy="100" r="40" stroke="black" stroke-width="3" fill="pink" />
+   <title>Ellipses</title>
+   <ellipse cx="1250" cy="100" rx="100" ry="50" stroke="purple" stroke-width="2" fill="lightblue" />
 </svg>
