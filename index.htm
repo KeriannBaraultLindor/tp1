@@ -17,6 +17,7 @@
 		<link rel="stylesheet"  href="css/01_petit.css">
 		<link rel="stylesheet" media="(min-width: 500px)" href="css/02_moyen.css">
 		<link rel="stylesheet" media="(min-width: 1000px)" href="css/03_grand.css">
+		<link rel="stylesheet"  href="css/animation-svg.css">
 	</head>
 
 	<body>
@@ -61,20 +62,60 @@
 		<main>
 			<div class="global">
 				<section>
-					<article><img src="img-svg/01-cercle.svg"></article>
-					<article><img src="img-svg/01-ellipse.svg"></article>
-					<article><img src="img-svg/01-ligne.svg"></article>
-					<article><img src="img-svg/01-polygones.svg"></article>
-					<article><img src="img-svg/01-polylines.svg"></article>
+					<article>
+						<svg viewBox="0 0 10 10" class="svg-5">
+						  <path d="M2,2 L8,2 L2,5 L8,5 L2,8 L8,8" />
+						</svg>
+					</article>
+					<article>
+						<svg viewBox="0 0 10 10" class="svg-6">
+						  <path d="M2,5 A 5 25 0 0 1 8 8" />
+						</svg>
+					</article>
+					<article>
+						<svg viewBox="0 0 10 10" class="svg-7">
+						  <path d="M2,5 S2,-2 4,5 S7,8 8,4" />
+						</svg>
+					</article>
+					<article>
+						<svg viewBox="0 0 10 10" class="svg-8">
+						  <path d="M5,2 Q 2,5 5,8" />
+						</svg>
+					</article>
+					<article>
+						<svg viewBox="0 0 10 10" class="svg-9">
+						  <path d="M2,2 Q5,2 5,5 T8,8" />
+						</svg>
+					</article>
 				</section>
 			</div>
 			<div class="global">
 				<section >	
-					<article><img src="img-svg/01-path.svg"></article>
-					<article><img src="img-svg/01-text.svg"></article>
-					<article><img src="img-svg/02-path.svg"></article>
-					<article><img src="img-svg/02-text.svg"></article>
-					<article><img src="img-svg/02-cercle.svg"></article>
+					<article>
+						<svg viewBox="0 0 10 10" class="svg-anim">
+						  <path d="M2,2 L8,10 L7,2 Z" />
+						</svg>
+					</article>
+					<article>
+						<svg viewBox="0 0 10 10" class="svg-anim2">
+						  <path d="M 1,2 C 1,6 8,6 8,2" />
+						</svg>
+					</article>
+					<article>
+						<svg width="600" height="400" class="svg-anim3">
+						  <path d="M 20 20 v 120 h 80 v -120 Z"/>
+						  </svg>
+					</article>
+					<article>
+						<svg viewBox="0 0 10 10" class="svg-anim4">
+						  <path d="M1,2 L1,10 M1,6 L5,2 M1,6 L5,10" />
+						</svg>
+					</article>
+					<article>
+						<svg width="600" height="300" class="svg-anim5">
+						  <path d="M20,40 C20,20  80,20  80,40 s20,20 60,0"/>
+						</svg>
+					</article>
 				</section>
 			</div>
 			<div class="global">	

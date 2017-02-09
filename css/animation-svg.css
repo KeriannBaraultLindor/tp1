@@ -1,0 +1,57 @@
+svg {
+  width: 60%;
+  height: 60%;
+  margin-bottom: 5%;
+}
+svg path {
+  fill: none;
+  stroke: #000;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: 0.2s;
+}
+.svg-5:hover path {
+  d: path("M3,3 L8,3 L2,5 L8,5 L3,7 L7,7");
+}
+.svg-6:hover path {
+  d: path("M2,5 A 5 25 -15 0 1 8 8");
+}
+.svg-7:hover path {
+  d: path("M2,5 S2,14 4,5 S7,8 8,4");
+}
+.svg-8:hover path {
+  d: path("M5,2 Q 8,5 5,8");
+}
+.svg-9:hover path {
+  d: path("M2,2 Q8,2 5,5 T8,8");
+}
+.svg-anim path {
+  stroke-dashoffset: 20;
+  stroke-dasharray: 2;
+  animation: dash 5s linear alternate infinite;
+}
+.svg-anim2 path {
+  stroke-dasharray: 15;
+  stroke-dashoffset: 15;
+  animation: dash 5s linear alternate infinite;
+}
+.svg-anim3 path {
+  stroke-dasharray: 20;
+  stroke-dashoffset: 150;
+  animation: dash 5s linear alternate infinite;
+}
+.svg-anim4 path {
+  stroke-dasharray: 15;
+  stroke-dashoffset: 15;
+  animation: dash 5s linear alternate infinite;
+}
+.svg-anim5 path {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 50;
+  animation: dash 3s linear alternate infinite;
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
