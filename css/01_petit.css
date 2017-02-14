@@ -17,20 +17,6 @@ body {
   flex-direction: column;
   font-family: calibri;
 }
-  
-  #monSVG {
-    position: fixed ;
-  }
-
-
-
-  /* Définir la couleur de fond, la couleur du contour, l'épaisseur du contour du path */
-
-  #monSVG path {
-    fill: none;
-    stroke: #ff39c4;
-    stroke-width: 3;
-  }
 header {
   display: flex;
   flex-direction: column;
