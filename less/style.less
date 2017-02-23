@@ -1,19 +1,237 @@
-
-
-
-/* ------------------------------------------------------------ MOBILE -------------- */
-
-@media all and (min-width: 480px) {
-	@import '01_petit.less';
+body,
+html {
+  height: 100%;
+  width: 100%;
+  background-color: #000;
 }
 
-@media all and (min-width: 600px) {
-	@import '02_moyen.less';
+.content {
+  position: relative;
+  background-color: #000;
+  min-height: 500px;
+  width: 100%;
+  font-family: "Arial";
+  line-height: 40px;
+  color: white;
+  font-size: 16px;
+  margin: auto;
+  text-align: center;
+  padding-top: 200px;
 }
 
-@media all and (min-width: 800px) {
-	@import '03_grand.less';
+.content p {
+  margin: auto;
+  text-align: center;
+  padding: 50px;
+  max-width: 900px;
 }
 
+a,
+a:visited,
+a:active {
+  color: inherit;
+}
 
+a:hover {
+  color: inherit;
+}
 
+.btn {
+  border-radius: 0px;
+  text-transform: uppercase;
+  border: 2px solid white;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding: 20px 50px;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #000;
+}
+
+/* Parallax base styles
+--------------------------------------------- */
+
+.parallax {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  perspective: 1px;
+}
+
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  overflow-scrolling: touch;
+  transform-style: preserve-3d;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+}
+
+.parallax__layer--base {
+  -webkit-transform: translateZ(0);
+  height: 100%;
+  z-index: -2;
+}
+
+.parallax__layer--rocks {
+  transform: translateZ(-1px) scale(2);
+  background-image: url("../images/sol_avant.png");
+  margin-top: 78%;
+  z-index: -3;
+}
+
+.parallax__layer--river {
+  position: fixed;
+  transform: translateZ(-2px) scale(3);
+  background-image: url("../images/terre_arbre.png");
+  margin-top: 95%;
+  z-index: -4;
+}
+
+.parallax__layer--back {
+  position: fixed;
+  transform: translateZ(-3px) scale(4);
+  background-image: url("../images/montagnes_milieu.png");
+  margin-top: 130%;
+  z-index: -5;
+}
+
+.parallax__layer--deep {
+  position: fixed;
+  transform: translateZ(-4px) scale(5);
+  background-image: url("../images/montagnes_arriere.png");
+  margin-top: 145%;
+  z-index: -6;
+}
+
+.parallax__layer--drone-a {
+  position: fixed;
+  transform: translateZ(0) scale(1);
+  background-image: url("../images/oiseaux_proches.png");
+  width: 38vw;
+  margin-top: 13%;
+  z-index: -7;
+}
+
+.parallax__layer--drone-b {
+  position: fixed;
+  transform: translateZ(-3px) scale(4);
+  background-image: url("../images/oiseaux_loin.png");
+  margin: auto;
+  margin-top: 13%;
+  right: 0px;
+  width: 18vw;
+  margin-right: -50%;
+  z-index: -8;
+}
+
+.parallax__layer--logo {
+  position: fixed;
+  transform: translateZ(-3px) scale(4);
+  right: 0px;
+  width: 30vw;
+  margin: auto;
+  margin-right: -50%;
+  margin-top: 13%;
+  color: white;
+  font-size: 50px;
+  letter-spacing: 10px;
+  text-align: center;
+  margin: auto;
+  margin-top: 76%;
+  z-index: -9;
+}
+
+.parallax__layer--bg {
+  position: fixed;
+  transform: translateZ(-5px) scale(6);
+  background-image: url("../img-svg/coucherSoleil.svg");
+  background-size: 100%;
+  height: 100vh;
+  z-index: -10;
+}
+
+.base {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  background-color: transparent;
+}
+
+/* demo styles
+--------------------------------------------- */
+
+body,
+html {
+  overflow: hidden;
+  background-color: #000;
+}
+
+body {
+  font: 100% / 1.5 Arial;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.parallax {
+  font-size: 200%;
+}
+
+/* centre the content in the parallax layers */
+
+.title {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* style the groups
+--------------------------------------------- */
+
+.rock-cover {
+  margin-top: 30%;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+
+.scroll-fill {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  opacity: 0.5;
+}
+
+h1 {
+  font-size: 22px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=style.unprefixed.css.map */
+
+.flexbox{
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  text-align: center;
+}
