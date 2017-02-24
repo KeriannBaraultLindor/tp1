@@ -14,7 +14,6 @@
 	window.addEventListener("scroll", maTrace);
 
 	function maTrace() {
-
 	  var fractionDuScroll = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
 
 	  for (var i = 0; i < dessins.length; i++) {

@@ -49,15 +49,13 @@ a:hover {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: scroll;
-  -webkit-perspective: 1px;
-          perspective: 1px;
+  perspective: 1px;
 }
 .parallax__group {
   position: relative;
   height: 100vh;
   overflow-scrolling: touch;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 .parallax__layer {
   position: absolute;
@@ -77,7 +75,8 @@ a:hover {
 }
 .parallax__layer--rocks {
   -webkit-transform: translateZ(-1px) scale(2);
-          transform: translateZ(-1px) scale(2);
+  -ms-transform: translateZ(-1px) scale(2);
+  transform: translateZ(-1px) scale(2);
   background-image: url("../images/sol_avant.png");
   margin-top: 78%;
   z-index: -3;
@@ -85,7 +84,8 @@ a:hover {
 .parallax__layer--river {
   position: fixed;
   -webkit-transform: translateZ(-2px) scale(3);
-          transform: translateZ(-2px) scale(3);
+  -ms-transform: translateZ(-2px) scale(3);
+  transform: translateZ(-2px) scale(3);
   background-image: url("../images/terre_arbre.png");
   margin-top: 95%;
   z-index: -4;
@@ -93,7 +93,8 @@ a:hover {
 .parallax__layer--back {
   position: fixed;
   -webkit-transform: translateZ(-3px) scale(4);
-          transform: translateZ(-3px) scale(4);
+  -ms-transform: translateZ(-3px) scale(4);
+  transform: translateZ(-3px) scale(4);
   background-image: url("../images/montagnes_milieu.png");
   margin-top: 130%;
   z-index: -5;
@@ -101,7 +102,8 @@ a:hover {
 .parallax__layer--deep {
   position: fixed;
   -webkit-transform: translateZ(-4px) scale(5);
-          transform: translateZ(-4px) scale(5);
+  -ms-transform: translateZ(-4px) scale(5);
+  transform: translateZ(-4px) scale(5);
   background-image: url("../images/montagnes_arriere.png");
   margin-top: 145%;
   z-index: -6;
@@ -109,7 +111,8 @@ a:hover {
 .parallax__layer--drone-a {
   position: fixed;
   -webkit-transform: translateZ(0) scale(1);
-          transform: translateZ(0) scale(1);
+  -ms-transform: translateZ(0) scale(1);
+  transform: translateZ(0) scale(1);
   background-image: url("../images/oiseaux_proches.png");
   width: 38vw;
   margin-top: 13%;
@@ -118,7 +121,8 @@ a:hover {
 .parallax__layer--drone-b {
   position: fixed;
   -webkit-transform: translateZ(-3px) scale(4);
-          transform: translateZ(-3px) scale(4);
+  -ms-transform: translateZ(-3px) scale(4);
+  transform: translateZ(-3px) scale(4);
   background-image: url("../images/oiseaux_loin.png");
   margin: auto;
   margin-top: 13%;
@@ -130,7 +134,8 @@ a:hover {
 .parallax__layer--titre {
   position: fixed;
   -webkit-transform: translateZ(-3px) scale(4);
-          transform: translateZ(-3px) scale(4);
+  -ms-transform: translateZ(-3px) scale(4);
+  transform: translateZ(-3px) scale(4);
   right: 0px;
   width: 30vw;
   margin-right: -50%;
@@ -146,7 +151,8 @@ a:hover {
 .parallax__layer--bg {
   position: fixed;
   -webkit-transform: translateZ(-5px) scale(6);
-          transform: translateZ(-5px) scale(6);
+  -ms-transform: translateZ(-5px) scale(6);
+  transform: translateZ(-5px) scale(6);
   background-image: url("../img-svg/coucherSoleil.svg");
   background-size: 100%;
   height: 100vh;
@@ -183,7 +189,8 @@ body {
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 /* style the groups
 --------------------------------------------- */
@@ -205,27 +212,18 @@ h1 {
   letter-spacing: 8px;
   text-transform: uppercase;
 }
+/*# sourceMappingURL=style.unprefixed.css.map */
 .flexbox {
-  
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-flex-flow: row wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   text-align: center;
 }
 /*=================================== ANIMATIONS SVG CSS ======================================*/
 .svg-anim1 path {
   stroke-dasharray: 20;
   stroke-dashoffset: 150;
-  -webkit-animation: dash 5s linear alternate infinite;
-          animation: dash 5s linear alternate infinite;
-}
-@-webkit-keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-  }
+  animation: dash 5s linear alternate infinite;
 }
 @keyframes dash {
   to {
