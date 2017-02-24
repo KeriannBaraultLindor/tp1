@@ -235,3 +235,16 @@ h1 {
   justify-content: space-around;
   text-align: center;
 }
+
+/*=================================== ANIMATIONS SVG CSS ======================================*/
+.svg-anim1 path{
+  stroke-dasharray: 20;
+  stroke-dashoffset:150;
+  animation: dash 5s linear alternate infinite;
+}
+
+@keyframes dash{
+  to{
+    stroke-dashoffset:0;
+  }
+}
